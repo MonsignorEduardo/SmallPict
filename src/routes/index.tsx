@@ -1,4 +1,5 @@
 import { createResource, createSignal } from "solid-js";
+import FileInput from "~/components/FileInput";
 
 const getArrayBuffer = async (file: File) => await file.arrayBuffer();
 
@@ -10,7 +11,7 @@ export default function Home() {
     const file = photo();
     if (!file) return;
     return URL.createObjectURL(file);
-  }
+  };
 
   return (
     <main class="hero min-h-screen bg-base-200">
@@ -30,26 +31,13 @@ export default function Home() {
                   <img src={getPhotoUrl()} alt="" />
                 </>
               )}
-
             </div>
             <div>
-              <input
-                type="file"
-                class="file-input file-input-bordered file-input-primary w-full max-w-xs"
-                id="input"
-                oninput={(e) => {
-                  const files = e.currentTarget.files;
-                  if (files && files.length >= 1) {
-                    const file = files[0];
-                    setPhoto(file);
-                  }
-                }}
-              />
+              <FileInput setPhoto={setPhoto} />
             </div>
           </div>
         </div>
       </div>
     </main>
-
   );
 }

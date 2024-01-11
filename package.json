@@ -10,15 +10,25 @@
     "@solidjs/router": "^0.10.8",
     "@solidjs/start": "^0.4.8",
     "autoprefixer": "^10.4.14",
+    "eslint-config-prettier": "^9.1.0",
     "postcss": "^8.4.26",
     "solid-js": "^1.8.10",
     "tailwindcss": "^3.3.3",
-    "vinxi": "0.1.1"
+    "vinxi": "0.1.1",
+    "wasm-imagemagick": "^1.2.8"
   },
   "engines": {
     "node": ">=18"
   },
   "devDependencies": {
-    "daisyui": "latest"
+    "@types/eslint": "^8.56.2",
+    "@typescript-eslint/parser": "^6.18.1",
+    "daisyui": "latest",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-solid": "^0.13.1",
+    "globals": "^13.24.0",
+    "typescript": "^5.3.3"
   }
 }
