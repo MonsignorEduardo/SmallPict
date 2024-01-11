@@ -1,30 +1,16 @@
-# SolidStart
+# Fresh project
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+Your new Fresh project is ready to go. You can follow the Fresh "Getting
+Started" guide here: https://fresh.deno.dev/docs/getting-started
 
-## Creating a project
+### Usage
 
-```bash
-# create a new project in the current directory
-npm init solid@latest
+Make sure to install Deno: https://deno.land/manual/getting_started/installation
 
-# create a new project in my-app
-npm init solid@latest my-app
+Then start the project:
+
+```
+deno task start
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
-
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+This will watch the project directory and restart as necessary.

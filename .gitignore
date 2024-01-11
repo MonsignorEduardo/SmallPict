@@ -1,28 +1,11 @@
-
-dist
-.solid
-.output
-.vercel
-.netlify
-netlify
-
-# Environment
+# dotenv environment variable files
 .env
-.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
-# dependencies
-/node_modules
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-*.launch
-.settings/
-
-# Temp
-gitignore
-
-# System Files
-.DS_Store
-Thumbs.db
+# Fresh build directory
+_fresh/
+# npm dependencies
+node_modules/
