@@ -14,7 +14,15 @@
   "[javascript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "css.customData": [
-    ".vscode/tailwind.json"
-  ]
+  "css.customData": [".vscode/tailwind.json"],
+  "cSpell.words": [
+    "jsquash",
+    "mozjpeg",
+    "squoosh",
+    "Vips",
+    "webp"
+  ],
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  }
 }

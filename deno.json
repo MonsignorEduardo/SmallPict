@@ -2,7 +2,7 @@
   "lock": false,
   "tasks": {
     "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
-    "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -",
+    "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -q -",
     "manifest": "deno task cli manifest $(pwd)",
     "start": "deno run -A --watch=src/static/,src/routes/ src/dev.ts",
     "build": "deno run -A  src/dev.ts build",
@@ -13,6 +13,9 @@
     "rules": {
       "tags": ["fresh", "recommended"]
     }
+  },
+  "fmt": {
+    "lineWidth": 100
   },
   "exclude": ["**/_fresh/*"],
   "imports": {
@@ -25,6 +28,7 @@
     "tailwindcss/": "npm:/tailwindcss@3.3.5/",
     "tailwindcss/plugin": "npm:/tailwindcss@3.3.5/plugin.js",
     "daisyui": "npm:daisyui",
+    "ts-pattern":"npm:ts-pattern",
     "$std/": "https://deno.land/std@0.208.0/"
   },
   "compilerOptions": {
