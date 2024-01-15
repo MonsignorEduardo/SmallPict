@@ -16,13 +16,21 @@
   },
   "css.customData": [".vscode/tailwind.json"],
   "cSpell.words": [
+    "daisyui",
     "jsquash",
+    "magick",
+    "Magick",
     "mozjpeg",
+    "preact",
     "squoosh",
+    "tailwindcss",
     "Vips",
     "webp"
   ],
   "[go]": {
     "editor.defaultFormatter": "golang.go"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
   }
 }
