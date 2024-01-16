@@ -1,5 +1,4 @@
 {
-  "lock": false,
   "tasks": {
     "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -q -",
@@ -36,11 +35,11 @@
     "preact/": "https://esm.sh/v135/preact@10.19.3/",
     "tailwindcss/": "npm:/tailwindcss@3.3.5/",
     "tailwindcss/plugin": "npm:/tailwindcss@3.3.5/plugin.js",
+    "@imagemagick/magick-wasm": "npm:@imagemagick/magick-wasm",
     "daisyui": "npm:daisyui",
     "effect": "npm:effect",
     "tailwindcss": "npm:tailwindcss@3.3.5",
-    "ts-pattern": "npm:ts-pattern",
-    "@imagemagick/magick-wasm": "npm:@imagemagick/magick-wasm"
+    "ts-pattern": "npm:ts-pattern"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
