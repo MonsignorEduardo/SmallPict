@@ -5,10 +5,10 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $_middleware from "./routes/_middleware.ts";
-import * as $api_joke from "./routes/api/joke.ts";
-import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
-import * as $Photo from "./islands/Photo.tsx";
+import * as $CompressButton from "./islands/CompressButton.tsx";
+import * as $FileInput from "./islands/FileInput.tsx";
+import * as $ShowImage from "./islands/ShowImage.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -16,12 +16,12 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/_middleware.ts": $_middleware,
-    "./routes/api/joke.ts": $api_joke,
-    "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/Photo.tsx": $Photo,
+    "./islands/CompressButton.tsx": $CompressButton,
+    "./islands/FileInput.tsx": $FileInput,
+    "./islands/ShowImage.tsx": $ShowImage,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

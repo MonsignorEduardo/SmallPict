@@ -25,6 +25,7 @@
     "squoosh",
     "tailwindcss",
     "Vips",
+    "webassembly",
     "webp"
   ],
   "[go]": {

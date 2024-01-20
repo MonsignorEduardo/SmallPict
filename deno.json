@@ -38,13 +38,17 @@
     "@imagemagick/magick-wasm": "npm:@imagemagick/magick-wasm",
     "daisyui": "npm:daisyui",
     "effect": "npm:effect",
-    "tailwindcss": "npm:tailwindcss@3.3.5",
-    "ts-pattern": "npm:ts-pattern"
+    "tailwindcss": "npm:tailwindcss@3.3.5"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
   "nodeModulesDir": true,
-  "scopes": {}
+  "scopes": {
+    "https://esm.sh/v135/": {
+      "@preact-signals/unified-signals": "https://esm.sh/v135/@preact-signals/unified-signals@0.2.2",
+      "react-fast-hoc": "https://esm.sh/v135/react-fast-hoc@0.3.2"
+    }
+  }
 }

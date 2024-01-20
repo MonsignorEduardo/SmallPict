@@ -13,7 +13,6 @@ const compressFile = (picture: Uint8Array, lvl: number) => {
   return Effect.async<never, Error, Uint8Array>((resume) => {
     ImageMagick.read(picture, (image) => {
       image.quality = lvl;
-      image.strip();
       image.colorSpace = ColorSpace.RGB;
       image.write(MagickFormat.Jpeg, (data) => {
         resume(Effect.succeed(data));

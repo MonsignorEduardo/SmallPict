@@ -11,7 +11,7 @@ export default {
     themes: [
       "light",
       "dark",
-      "nord",
+      "dracula",
     ],
   },
 } satisfies Config;
